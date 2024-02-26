@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Transfers Aeropuerto</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">Transfers Aeropuerto</a></div>
+      <ul class="links">
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#viaje-seguro">Destinos</a></li>
+        <li><a href="#">Pie de pagina</a></li>
+      </ul>
+      <a href="ingles.html" class="action_btn">English</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <ul class="links">
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#viaje-seguro">Destinos</a></li>
+        <li><a href="#">Pie de pagina</a></li>
+        <li><a href="ingles.html" class="action_btn">English</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section id="hero">
+        <h1>Bienvenidos</h1>
+        <p>
+          En Remises Aeropuerto te llevamos a tu destino sano y salvo
+        </p>
+      </section>
+    </main>
+  </header>
+
+  <h1 class="title">Promociones</h1>
+
+  <section id="promociones">
+
+    <div class="card">
+      <img src="https://www.viagensecaminhos.com/wp-content/uploads/2011/08/ciudad-del-este-paraguay.jpg">
+      <h4>Promocion en viajes a Ciudad del este</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+      <a href="#" target="_blank">Mas info</a>
+    </div>
+
+    <div class="card">
+      <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/80000/80259-Misiones-Province.jpg">
+      <h4>Promociones en viajes dentro de Misiones</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+      <a href="#" target="_blank">Mas info</a>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-clubecandeias.s3.sa-east-1.amazonaws.com/uploads/2022/12/cataratas-foz-do-iguacu-parana-clube-candeias-1.jpeg">
+      <h4>Promociones en viajes a Foz do Iguaçu</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+      <a href="#" target="_blank">Mas info</a>
+    </div>
+
+  </section>
+
+  <section id="viaje-seguro">
+    <main>
+      <h1>Obtenga la mejor experiencia de viaje</h1>
+    </main>
+  </section>
+
+  <section id="nuestros-programas">
+    <div id="nuestros-servicios">
+      <h1 class="heading">Destinos Turísticos</h1>
+
+      <div class="box-container">
+
+        <div class="box-1">
+          <h3>Paraguay</h3>
+          <a href="#" class="btn">Ver más</a>
+        </div>
+
+        <div class="box-2">
+          <h3>Argentina</h3>
+          <a href="#" class="btn">Ver más</a>
+        </div>
+
+        <div class="box-3">
+          <h3>Brasil</h3>
+          <a href="#" class="btn">Ver más</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="pie-pagina">
+
+    <section id="viaje-seguro">
+      <main>
+        <h1>Transfers Aeropuerto</h1>
+      </main>
+    </section>
+
+    <div class="grupo-1">
+        <div class="box">
+            <h2>Viaje Seguro con Transfers Aeropuerto</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis possimus iusto facere accusamus animi. Sint cum earum delectus, molestias doloribus maiores adipisci distinctio magnam quo natus minima. Sunt, aperiam eaque?</p>
+        </div>
+    </div>
+
+    <div class="grupo-2">
+        <small>&copy; 2024 <b><a href="#" class="bernidesign" target="_blank">rbdesign</a></b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+  </script>
+</body>
+
+</html>
